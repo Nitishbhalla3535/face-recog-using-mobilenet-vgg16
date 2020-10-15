@@ -35,7 +35,7 @@ def draw_test(name, pred, im):
     cv2.imshow(name, expanded_image)
 
 def getRandomImage():
-    path = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//'
+    path = ''
     folders = list(filter(lambda x: os.path.isdir(os.path.join(path, x)), os.listdir(path)))
     random_directory = np.random.randint(0,len(folders))
     path_class = folders[random_directory]
@@ -72,14 +72,14 @@ cv2.destroyAllWindows()
 
 import os
 
-os.walk("C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//")
+os.walk("")
 
 
 # In[ ]:
 
 
 import os
-path = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//'
+path = ''
 folders = list(filter(lambda x: os.path.isdir(os.path.join(path, x)), os.listdir(path)))
 print(folders)
 
@@ -98,7 +98,7 @@ import cv2
 import numpy as np
 
 def getRandomImage():
-    path = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//'
+    path = ''
     folders = list(filter(lambda x: os.path.isdir(os.path.join(path, x)), os.listdir(path)))
     random_directory = np.random.randint(0,len(folders))
     print("Class - " + str(random_directory))
