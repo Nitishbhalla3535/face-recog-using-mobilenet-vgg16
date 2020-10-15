@@ -7,8 +7,8 @@
 ###Loading our face_recog dataset
 from keras.preprocessing.image import ImageDataGenerator
 
-train_data_dir = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//training//'
-validation_data_dir = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//'
+train_data_dir = ''
+validation_data_dir = ''
 
 # Let's use some data augmentaiton 
 train_datagen = ImageDataGenerator(
