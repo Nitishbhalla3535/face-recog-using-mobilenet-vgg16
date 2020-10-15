@@ -41,7 +41,7 @@ while True:
        # face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
 
         # Save file in specified directory with unique name
-        file_name_path = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//nitish + str(count)' + '.jpg'
+        file_name_path = ' + str(count)' + '.jpg'
         cv2.imwrite(file_name_path, face)
 
         # Put count on images and display live count
@@ -123,8 +123,8 @@ print(model.summary())
 
 from keras.preprocessing.image import ImageDataGenerator
 
-train_data_dir = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//training//'
-validation_data_dir = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//'
+train_data_dir = ''
+validation_data_dir = ''
 
 # Let's use some data augmentaiton 
 train_datagen = ImageDataGenerator(
@@ -218,7 +218,7 @@ from os.path import isfile, join
 face_dict = {"[0]": "Nitish",
             "[1]":"Stranger"}
 
-face_dict_n = {"nitish":"Nitish",
+face_dict_n = {"man":"man",
             "stranger":  "Stranger"}
 def draw_test(name, pred, im):
     face=face_dict[str(pred)]
@@ -229,7 +229,7 @@ def draw_test(name, pred, im):
     cv2.imshow(name, expanded_image)
 
 def getRandomImage():
-    path = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//'
+    path = ''
     folders = list(filter(lambda x: os.path.isdir(os.path.join(path, x)), os.listdir(path)))
     random_directory = np.random.randint(0,len(folders))
     path_class = folders[random_directory]
@@ -266,14 +266,14 @@ cv2.destroyAllWindows()
 
 import os
 
-os.walk("C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//")
+os.walk("")
 
 
 # In[ ]:
 
 
 import os
-path = 'C://Users//Rajesh Bhalla//Desktop//facerecog1//valid//'
+path = ''
 folders = list(filter(lambda x: os.path.isdir(os.path.join(path, x)), os.listdir(path)))
 print(folders)
 
